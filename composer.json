@@ -1,0 +1,39 @@
+{
+    "name": "badinansoft/nova-tooltip",
+    "description": "A Laravel Nova tool to give you ability to put tooltip in fields in every where and in menu item",
+    "keywords": [
+        "laravel",
+        "nova","nova-4","tooltip","Fields","Menu","menu item","item"
+    ],
+    "homepage": "https://badinansoft.com",
+    "authors": [
+        {
+            "name": "Shahab Zebari",
+            "email": "me@shahabzebari.net",
+            "homepage": "https://shahabzebari.net",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "larave/nova": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Badinansoft\\Tooltip\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Badinansoft\\Tooltip\\ToolTipServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
