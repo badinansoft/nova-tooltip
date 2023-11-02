@@ -23,10 +23,9 @@
       </span>
 
 
-
       <Tooltip v-if="tooltip!==null" class="inline absolute right-0">
 
-        <template v-slot:content >
+        <template v-slot:content>
           <span v-html="tooltip"></span>
         </template>
 
@@ -46,7 +45,7 @@ import identity from 'lodash/identity'
 import isNull from 'lodash/isNull'
 import omitBy from 'lodash/omitBy'
 import pickBy from 'lodash/pickBy'
-import { mapGetters, mapMutations } from '../../../node_modules/vuex'
+import { mapGetters, mapMutations } from 'vuex'
 
 export default {
   props: {
