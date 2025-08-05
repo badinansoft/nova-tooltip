@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "laravel-nova-devtool": "file:vendor/laravel/nova-devtool"
+  },
+  "dependencies": {
+    "laravel-mix": "^6.0.49"
   }
 }
