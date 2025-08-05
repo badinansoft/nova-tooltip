@@ -1,9 +1,11 @@
-let mix = require('laravel-mix')
+let mix = require("laravel-mix");
+let NovaExtension = require("laravel-nova-devtool");
 
-require('./nova.mix')
+mix.extend("nova", new NovaExtension());
 
 mix
-  .setPublicPath('dist')
-  .js('resources/js/tool.js', 'js')
+  .setPublicPath("dist")
+  .js("resources/js/tool.js", "js")
   .vue({ version: 3 })
-  .nova('badinansoft/tooltip')
+  .nova("badinansoft/nova-tooltip")
+  .version();
