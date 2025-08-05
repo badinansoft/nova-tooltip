@@ -1,5 +1,5 @@
 {
-    "name": "test/test",
+    "name": "badinansoft/nova-tooltip",
     "description": "A Laravel Nova tool.",
     "keywords": [
         "laravel",
@@ -22,13 +22,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "Test\\Test\\": "src/"
+            "Badinansoft\\Tooltip\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Test\\Test\\ToolServiceProvider"
+                "Badinansoft\\Tooltip\\ToolServiceProvider"
             ]
         }
     },
