@@ -22,13 +22,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "Badinansoft\\Tooltip\\": "src/"
+            "Test\\Test\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Badinansoft\\Tooltip\\ToolServiceProvider"
+                "Test\\Test\\ToolServiceProvider"
             ]
         }
     },
