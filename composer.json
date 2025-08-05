@@ -28,7 +28,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Badinansoft\\Tooltip\\ToolServiceProvider"
+                "Badinansoft\\Tooltip\\ToolTipServiceProvider"
             ]
         }
     },
