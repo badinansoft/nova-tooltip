@@ -35,9 +35,9 @@
           </template>
 
           <Icon
-              :solid="true"
-              type="question-mark-circle"
-              class="cursor-pointer text-gray-400 dark:text-gray-500"
+            name="question-mark-circle"
+            type="mini"
+            class="cursor-pointer text-gray-400 dark:text-gray-500"
           />
 
         </Tooltip>
@@ -69,9 +69,15 @@
 </template>
 
 <script>
+import { Tooltip, Icon } from 'laravel-nova-ui'
+
 export default {
   name: 'ResourceTableHeader',
 
+  components: {
+    Tooltip,
+    Icon,
+  },
   emits: ['order', 'reset-order-by'],
 
   props: {

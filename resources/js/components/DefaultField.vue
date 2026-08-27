@@ -22,10 +22,10 @@
             </template>
 
             <Icon
-                :solid="true"
-                type="question-mark-circle"
-                class="cursor-pointer text-gray-400 dark:text-gray-500"
-            />
+              name="question-mark-circle"
+              type="mini"
+              class="cursor-pointer text-gray-400 dark:text-gray-500"
+          />
 
           </Tooltip>
 
@@ -60,8 +60,13 @@
 
 <script>
 import { HandlesValidationErrors, mapProps } from 'laravel-nova'
+import { Tooltip, Icon } from 'laravel-nova-ui'
 
 export default {
+  components: {
+    Tooltip,
+    Icon,
+  },
   mixins: [HandlesValidationErrors],
 
   props: {

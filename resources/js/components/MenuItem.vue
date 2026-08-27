@@ -30,8 +30,8 @@
                 </template>
 
                 <Icon
-                    :solid="true"
-                    type="question-mark-circle"
+                    name="question-mark-circle"
+                    type="mini"
                     class="cursor-pointer text-gray-400 dark:text-gray-500"
                 />
 
@@ -47,8 +47,13 @@ import isNull from 'lodash/isNull'
 import omitBy from 'lodash/omitBy'
 import pickBy from 'lodash/pickBy'
 import {mapGetters, mapMutations} from 'vuex'
+import { Tooltip, Icon } from 'laravel-nova-ui'
 
 export default {
+    components: {
+        Tooltip,
+        Icon,
+    },
     props: {
         item: {
             type: Object,

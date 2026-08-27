@@ -3,7 +3,7 @@
     "description": "A Laravel Nova tool to give you ability to put tooltip in fields in every where and in menu item",
     "keywords": [
         "laravel",
-        "nova","nova-4","tooltip","Fields","Menu","menu item","item"
+        "nova","nova-5","tooltip","Fields","Menu","menu item","item"
     ],
     "homepage": "https://badinansoft.com",
     "authors": [
@@ -16,8 +16,12 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0",
-        "laravel/nova": "^4.26.5"
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0|^12.0|^13.0"
+    },
+    "require-dev": {
+        "laravel/nova": "^5.0",
+        "laravel/nova-devtool": "^1.7"
     },
     "autoload": {
         "psr-4": {

@@ -5,8 +5,8 @@
   >
     <div class="md:w-1/4 md:py-3">
       <slot>
-        <h4 class="font-bold md:font-normal">
-          <span>{{ label }}
+        <h4 class="flex items-center font-bold md:font-normal">
+          <span>{{ label }}</span>
 
           <Tooltip :triggers="['click']" v-if="tooltip!==''" class="inline ml-4">
 
@@ -15,14 +15,12 @@
             </template>
 
             <Icon
-                :solid="true"
-                type="question-mark-circle"
-                class="cursor-pointer text-gray-400 dark:text-gray-500"
+             name="question-mark-circle"
+              type="mini"
+              class="cursor-pointer text-gray-400 dark:text-gray-500"
             />
-
           </Tooltip>
 
-          </span>
         </h4>
       </slot>
     </div>
@@ -56,9 +54,15 @@
 
 <script>
 import { CopiesToClipboard, FieldValue } from 'laravel-nova'
+import { Tooltip, Icon } from 'laravel-nova-ui'
 
 export default {
   mixins: [CopiesToClipboard, FieldValue],
+
+  components: {
+    Tooltip,
+    Icon,
+  },
 
   props: {
     index: {
